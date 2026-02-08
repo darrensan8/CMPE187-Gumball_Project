@@ -1,9 +1,9 @@
 # Constant Attributes
-Nickel = 5
-Dime = 10
-Quarter = 25
-Red_Gumball_Cost = 50
-Green_Gumball_Cost = 100
+Nickel = 0.05
+Dime = 0.10
+Quarter = 0.25
+Red_Gumball_Cost = 0.5
+Yellow_Gumball_Cost = 0.10
 
 #Machine State
 balance = 0
@@ -37,8 +37,8 @@ def dispense_gumball(color):
         global balance
         if color == "Red":
             cost = Red_Gumball_Cost
-        elif color == "Green":
-            cost = Green_Gumball_Cost
+        elif color == "Yellow":
+            cost = Yellow_Gumball_Cost
         else:
             print("Invalid color. Please choose 'Red' or 'Green'.")
             return False
